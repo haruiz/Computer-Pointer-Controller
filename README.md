@@ -63,7 +63,7 @@ File  | Description
  [pipeline.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/pipeline.py) | The Pipeline is an abstract class which contains a generator function which by default pass our data (from the previous generator in the pipeline) through filter function and map function. The filter function allows us to filter the data passing our pipeline. The map function gives us the possibility to manipulate (map) the pipeline data or update the state of the step as in First class. By overriding an__or__ operator, it is possible to create Unix like pipeline
  [profiling.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/profiling.py) | line profile instance 
  [timeit_decor.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/timeit_decor.py) | Util decorator that is used for measuring the execution time of the "load model" and "predict" methods implemented in the Model class (model.py)
- [perf_count_decor.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/timeit_decor.py) | Util decorator that is used for measuring the perform of the model after do predictions
+ [perf_count_decor.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/perf_count_decor.py) | Util decorator that is used for measuring the perform of the model after do predictions
  [util.py](https://github.com/haruiz/Computer-Pointer-Controller/blob/master/src/util.py) | Processing, and profiling util functions
  
 ## Demo
@@ -92,7 +92,7 @@ The figure below shows the inference time for each model. Given that the Face de
 
 ### Perf Counts (CPU time)
 
-In this chart, we can notice that during the inference, the task that takes more CPU time is performing the convolutions. Additionally, we can also observe that the face detector seems to the more complex based on the number of layers.
+In this chart, we can notice that during the inference, the task that takes more CPU time is performing the convolutions. Additionally, we can also observe that the face detector seems to be the more complex based on the number of layers.
 
 <img src="assets/perf_count.png" alt="Inference time">
 
