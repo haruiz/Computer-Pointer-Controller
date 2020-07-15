@@ -211,7 +211,7 @@ if __name__ == '__main__':
     # feed_data = FeedData(input_type="image", input_file="./bin/image.jpg")
     feed_data = FeedData(input_type="video", input_file="./bin/demo.mp4")
     # feed_data = FeedData(input_type="cam")
-    detect_faces = DetectFaces("FP32-INT1")
+    detect_faces = DetectFaces("FP32-INT1", device="CPU")
     detect_landmarks = DetectLandmarks("FP16")
     estimate_head_pose = EstimateHeadPose("FP16")
     estimate_gaze = EstimateGaze("FP16")
